@@ -1,0 +1,353 @@
+/* -----------------COLORES */
+$color__base1: rgba(23, 180, 211, 0.302);
+$color__base2: rgba(255, 202, 128, 0.502);
+$color__base3: rgba(90, 65, 31, 0.502);
+$color__base4: rgba(64, 111, 121, 0.302);
+/* ---------------- GRADIENTES */
+$color___gradiente1:  linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+$color___gradiente2:  linear-gradient(to left, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+$color___gradiente3:  linear-gradient(to top, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+$color___gradiente4:  linear-gradient(to bottom, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+$color___gradiente5:  linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff);
+/* --------------------MEDIDAS */
+$ancho: 1200px;
+$margin-top: 30px;
+/* --------------FONTS */
+$font-size__header: 60px;
+$font-size__text: 20px;
+$font-padding: 25px;
+
+/* BODY */
+.fondo__body {
+    background-image: $color___gradiente5;
+}
+/* HEADER */
+header {
+    width: ($ancho)-100px;
+}
+.header__logo {
+    width: ($ancho)-1100px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-color: $color__base1;
+}
+.header__titulo {
+    font-size: $font-size__header;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 900;
+    margin-top: $margin-top;
+    cursor: pointer;
+    transition-duration: 1.5s;
+}
+  h1.header__titulo:hover {
+      opacity: 0.3;    
+  }
+
+  /* NAV */
+  nav.nav {
+      width: ($ancho)-800px;
+    background-color: transparent;
+    margin-top: $margin-top;
+}
+.nav li {
+    background-color: $color__base1;
+    list-style: none;
+    font-size: 25px;
+    text-align: right;
+    padding: 15px 5px 15px 55px;
+    font-family: 'Lobster', cursive;
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-image: $color___gradiente1;
+}
+.nav li:hover {
+    background-color: #ffffff33;
+    transform:scale(1.2);     
+}
+li a {
+    text-decoration: none;
+    border-width: 5px;
+    color: #fff;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer;
+}
+li a:hover {
+    color: black;
+    background-color: initial;
+}
+/* PORTADA */
+/* carrusel */
+#carrusel {
+    width: auto;
+    margin-top: $margin-top;
+}
+/* texto/imagen */
+.texto__portada {
+    width: auto;
+    background-image: $color___gradiente1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: $font-padding;
+    margin-top: 20px;
+    font-size: $font-size__text;
+    font-weight: 200;
+}
+.sobreMi__texto {
+    font-size: $font-size__text;
+    margin-top: $margin-top;
+    padding: $font-padding;
+    background-image: $color___gradiente1;
+}
+div.sobreMi__imagen img {
+    width: ($ancho)-820px;
+    margin-top: $margin-top;
+    transition-duration: 1s;
+    border-bottom-right-radius: 10px;
+    transform: translate(0px);
+    opacity: 0.8;
+}
+div.sobreMi__imagen:hover img {
+    transform: scale(1.02);
+    transform: translate(20px);
+    opacity: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 2rem;
+  }
+  /* GALERIA */
+  div img.cuadro {
+    width: ($ancho)/4;
+    margin-top: $margin-top;
+    transition-duration: 1.2s;
+}
+div img.cuadro:hover {
+transform: scale(1.5);       
+}
+p.texto__cuadro {  
+    width: ($ancho)/4;      
+    background-image:$color___gradiente2;
+    padding: $font-padding;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+} 
+/* REDES SOCIALES */
+div.redes__iconos img {
+    width: ($ancho)/12;  
+    margin:25px;
+    transition-duration: 500ms;
+    opacity: 0.95;
+    background-image:$color___gradiente5;
+    border-radius: 100%;
+}
+div.redes__iconos img:hover {
+    transform:scale(1.1);
+    opacity: 1;
+    cursor: pointer;
+}
+.redes__texto {
+      width: 300px;
+      margin-top: 20px;
+      padding: 40px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      background-image: $color___gradiente1;
+     
+}
+/* CONTACTO */
+.texto__sobreFormulario{
+    width: ($ancho)/2;
+    margin-top: $margin-top;
+    text-align: center;
+}
+.form {
+    width:($ancho)/2;
+    padding: $font-padding;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;        
+    text-align: center;
+    height: auto;
+    background-image:$color___gradiente1;
+}
+/* FOOTER */
+.footer {
+    width: auto;
+    margin-top: $margin-top;
+    background-image: $color___gradiente1;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: $font-size__text;
+    font-weight: 900;
+}
+
+ /* ---------------------------------------------------------------MEDIA QUERIES */
+
+ @media only screen and (max-width: 1440px)
+ {   
+    .fondo__body {
+        background-image: linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff); }
+      
+      /* HEADER */
+      header {
+        width: 1440px;
+     }
+      .header__logo {
+        width: 100px;
+        margin-top: $margin-top;
+        border: 1px solid;
+        border-color: rgba(23, 180, 211, 0.302);
+      }
+      
+      .header__titulo {
+        font-size: 60px;
+        font-family: 'Alex Brush', cursive;
+        font-weight: 900;
+        margin-top: ($margin-top)*1.5;
+        cursor: pointer;
+        transition-duration: 1.5s;
+        color:black;
+     }
+      
+      h1.header__titulo:hover {
+        opacity: 0.3; }
+      
+      /* NAV */
+      nav.nav {
+        width: ($ancho)/8;
+        background-color: transparent;
+        margin-top: 30px; }
+      
+      .nav li {
+        background-color: rgba(23, 180, 211, 0.302);
+        list-style: none;
+        font-size: 25px;
+        text-align: right;
+        padding: 15px;
+        font-family: 'Lobster', cursive;
+        transition-duration: 400ms;
+        cursor: pointer;
+        background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+      
+      .nav li:hover {
+        background-color: #ffffff33;
+        transform: scale(1.2); }
+      
+      li a {
+        text-decoration: none;
+        border-width: 5px;
+        color: #fff;
+        border-color: transparent;
+        border-style: solid;
+        cursor: pointer; }
+      
+      li a:hover {
+        color: black;
+        background-color: initial; }
+      
+      /* PORTADA */
+      /* carrusel */
+      #carrusel {
+        width: auto;
+        margin-top: 30px; }
+      
+      /* texto/imagen */
+      .texto__portada {
+        width: auto;
+        background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 25px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 200; }
+
+        div img.cuadro {
+            width: 200px;
+        }
+        p.texto__cuadro {
+            width: 200px;
+            background-image: linear-gradient(to left, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+            padding: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900; }
+
+        div.redes__iconos img {
+                width: 150px;
+                margin: 5px 0px 15px 65px;
+                transition-duration: 500ms;
+                opacity: 0.95;
+                background-image: linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff);
+                border-radius: 100%; }
+              
+        div.redes__iconos img:hover {
+                transform: scale(1.1);
+                opacity: 1;
+                cursor: pointer; }
+        .form, .texto__sobreFormulario {
+            width:($ancho)/3;
+        }
+        div.sobreMi__imagen img {
+            width: 180px;}
+      
+ }
+ 
+ @media only screen and (max-width: 320px)
+ {   
+     body {
+         width: auto;
+     }
+     nav.nav {
+         list-style: none;
+         cursor: auto;
+         transform: translate(50px);
+     }
+     nav ul li a {
+         text-align: left;
+         justify-content: stretch;
+     }
+     .nav ul {
+         justify-content: end;
+         background-color: $color__base1;
+         font-size: 18px;
+         font-family: 'Lobster', cursive;
+         transition-duration: 400ms;
+         background-image: $color___gradiente1;
+         padding: 15px auto;
+ 
+     }
+     h1.titulo__portada {
+         font-size: 45px;
+         font-family: 'Alex Brush', cursive;
+         font-weight: 600;      
+         cursor: pointer;
+         color:$color__base1;
+         text-decoration: none;
+         transition-duration: 1s;
+         justify-self: center;
+         padding-left: 50px;
+     }
+     h3 {
+         width: 300px;
+     }
+     img.header__logo {
+         margin-left: 100px;
+         width:($ancho)/12;
+         margin-top: $margin-top;
+     }
+     div.imagen img{
+         width: 200px;
+     }
+     p.textoPortada{
+         font-size: 20px;   
+         width: auto;
+         margin-top: 30px;
+         background-color: $color__base1;
+         padding: 25px;
+         font-family:'Courier New', Courier, monospace;   
+     }
+     .carousel {
+         margin-top: 0px;
+     }
+     .form {
+         margin-top: 60px;
+     }
+ }
