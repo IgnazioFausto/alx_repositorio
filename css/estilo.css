@@ -94,14 +94,6 @@ div.sobreMi__imagen img {
   transform: translate(0px);
   opacity: 0.8; }
 
-div.sobreMi__imagen:hover img {
-  transform: scale(1.02);
-  transform: translate(20px);
-  opacity: 1;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 2rem; }
-
 /* GALERIA */
 div img.cuadro {
   width: 256px;
@@ -388,7 +380,8 @@ div.redes__iconos img:hover {
   div.sobreMi__imagen img {
     width: 320px;
     margin-top: 30px;
-    border: 0px; }
+    border: 0px;
+    transform: translate(0px); }
   /* FOOTER */
   .footer {
     width: auto;
