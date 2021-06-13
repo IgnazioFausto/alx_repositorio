@@ -159,30 +159,32 @@ div.redes__iconos img:hover {
   font-weight: 900; }
 
 /* ---------------------------------------------------------------MEDIA QUERIES */
-@media only screen and (max-width: 1440px) and (min-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  /* BODY */
+  body {
+    width: auto; }
   .fondo__body {
     background-image: linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff); }
   /* HEADER */
   header {
-    width: 1440px; }
+    width: auto; }
   .header__logo {
     width: 100px;
-    margin-top: 30px;
+    margin-top: 10px;
     border: 1px solid;
     border-color: rgba(23, 180, 211, 0.302); }
   .header__titulo {
     font-size: 60px;
     font-family: 'Alex Brush', cursive;
     font-weight: 900;
-    margin-top: 45px;
+    margin-top: 30px;
     cursor: pointer;
-    transition-duration: 1.5s;
-    color: black; }
+    transition-duration: 1.5s; }
   h1.header__titulo:hover {
     opacity: 0.3; }
   /* NAV */
   nav.nav {
-    width: 128px;
+    width: 224px;
     background-color: transparent;
     margin-top: 30px; }
   .nav li {
@@ -190,7 +192,7 @@ div.redes__iconos img:hover {
     list-style: none;
     font-size: 25px;
     text-align: right;
-    padding: 15px;
+    padding: 15px 5px 15px 55px;
     font-family: 'Lobster', cursive;
     transition-duration: 400ms;
     cursor: pointer;
@@ -222,17 +224,36 @@ div.redes__iconos img:hover {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 200; }
+  /* SOBRE MI */
+  .sobreMi__texto {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 25px;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  div.sobreMi__imagen img {
+    width: 304px;
+    margin-top: 30px;
+    transition-duration: 1s;
+    border-bottom-right-radius: 10px;
+    transform: translate(0px);
+    opacity: 0.8; }
+  /* GALERIA */
   div img.cuadro {
-    width: 200px; }
+    width: 256px;
+    margin-top: 30px;
+    transition-duration: 1.2s; }
+  div img.cuadro:hover {
+    transform: scale(1.5); }
   p.texto__cuadro {
-    width: 200px;
+    width: 256px;
     background-image: linear-gradient(to left, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
     padding: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900; }
+  /* REDES SOCIALES */
   div.redes__iconos img {
-    width: 150px;
-    margin: 5px 0px 15px 65px;
+    width: 85.33333px;
+    margin: 25px;
     transition-duration: 500ms;
     opacity: 0.95;
     background-image: linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff);
@@ -241,8 +262,157 @@ div.redes__iconos img:hover {
     transform: scale(1.1);
     opacity: 1;
     cursor: pointer; }
-  .form, .texto__sobreFormulario {
-    width: 341.33333px; }
+  .redes__texto {
+    width: 300px;
+    margin-top: 30px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  /* CONTACTO */
+  .texto__sobreFormulario {
+    width: 682.66667px;
+    margin-top: 30px;
+    text-align: center; }
+  .form {
+    width: 682.66667px;
+    padding: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  /* FOOTER */
+  .footer {
+    width: auto;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 768px;
+    line-height: 1.2;
+    height: auto; }
+  .fondo__body {
+    background-image: linear-gradient(to top, rgba(255, 202, 128, 0.502), #fff); }
+  /* HEADER */
+  header {
+    width: 768px;
+    margin: 0px; }
+  .header__logo {
+    width: 100px;
+    margin-top: 30px;
+    border: 1px solid;
+    border-color: rgba(23, 180, 211, 0.302); }
+  .header__titulo {
+    font-size: 60px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 900;
+    margin-top: 45px;
+    cursor: pointer;
+    transition-duration: 1.5s;
+    color: black; }
+  h1.header__titulo:hover {
+    opacity: 0.3; }
+  /* NAV */
+  nav.nav {
+    width: 160px;
+    background-color: transparent;
+    margin-top: 30px; }
+  .nav li {
+    background-color: rgba(23, 180, 211, 0.302);
+    list-style: none;
+    font-size: 25px;
+    text-align: right;
+    padding: 15px 5px 15px 15px;
+    font-family: 'Lobster', cursive;
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  .nav li:hover {
+    background-color: #ffffff33;
+    transform: scale(1.2); }
+  li a {
+    text-decoration: none;
+    border-width: 5px;
+    color: #fff;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer; }
+  li a:hover {
+    color: black;
+    background-color: initial; }
+  /* PORTADA */
+  /* carrusel */
+  #carrusel {
+    width: auto;
+    margin-top: 30px; }
+  /* texto/imagen */
+  .texto__portada {
+    width: auto;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 200; }
+  /* GALERIA */
+  div img.cuadro {
+    width: 220px; }
+  div img.cuadro:hover {
+    transform: scale(1.1); }
+  p.texto__cuadro {
+    width: 220px;
+    background-image: linear-gradient(to left, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900; }
+  /* RRSS */
+  div.redes__iconos {
+    width: 300px; }
+  div.redes__iconos img {
+    width: 150px;
+    margin: 15px 0px 15px 65px;
+    transition-duration: 500ms;
+    opacity: 0.95;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
+    border-radius: 100%; }
+  div.redes__iconos img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    cursor: pointer; }
+  /* Contacto */
+  .form {
+    width: 420px;
+    margin-top: 0px;
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  input, select, textarea {
+    border-radius: 5px; }
+  label {
+    width: 380px;
+    margin: 0px;
+    padding: 0px; }
+  .botonFormulario {
+    margin: 10px;
+    background-color: rgba(23, 180, 211, 0.302); }
+  .botonLimpiar {
+    background-color: rgba(255, 202, 128, 0.502); }
+  div.texto__sobreFormulario h3 {
+    font-size: 22px;
+    padding: 20px;
+    width: 420px; }
+  /* Sobre mi */
   div.sobreMi__imagen img {
     width: 180px; } }
 
@@ -295,7 +465,7 @@ div.redes__iconos img:hover {
     background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
   .nav li:hover {
     background-color: #ffffff33;
-    transform: scale(1.2); }
+    transform: scale(1); }
   li a {
     text-decoration: none;
     border-width: 5px;
@@ -321,11 +491,12 @@ div.redes__iconos img:hover {
     margin-top: 60px; }
   /* GALERIA */
   div img.cuadro {
-    width: 320px;
+    width: 280px;
+    margin-left: 20px;
     margin-top: 30px;
-    transition-duration: 2s; }
+    transition-duration: 1s; }
   div img.cuadro:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
   p.texto__cuadro {
     width: 320px;
     background-image: linear-gradient(to left, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2));
@@ -366,11 +537,23 @@ div.redes__iconos img:hover {
     width: 320px;
     margin-top: 0px;
     padding: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     font-weight: 800;
     text-align: center;
     height: auto;
     background-image: linear-gradient(to right, rgba(255, 202, 128, 0.502), rgba(23, 180, 211, 0.2)); }
+  input, select, textarea {
+    border-radius: 5px; }
+  label {
+    width: 280px;
+    margin: 0px;
+    padding: 0px; }
+  .botonFormulario {
+    margin: 10px;
+    background-color: rgba(23, 180, 211, 0.302); }
+  .botonLimpiar {
+    background-color: rgba(255, 202, 128, 0.502); }
   /* SOBRE MI */
   .sobreMi__texto {
     font-size: 20px;
@@ -380,6 +563,7 @@ div.redes__iconos img:hover {
   div.sobreMi__imagen img {
     width: 320px;
     margin-top: 30px;
+    opacity: 0.8;
     border: 0px;
     transform: translate(0px); }
   /* FOOTER */
